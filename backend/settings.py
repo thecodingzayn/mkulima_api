@@ -92,7 +92,7 @@ DATABASES = {
     "default": dj_database_url.config(
         default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
         conn_max_age=600,
-        ssl_mode='require' if not DEBUG else 'disable'  # require SSL in production
+        
     )
 }
 
